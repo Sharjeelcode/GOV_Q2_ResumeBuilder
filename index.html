@@ -3,7 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="src/download-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="logo_div">
+        <img
+          src="src/download-removebg-preview.png"
+          alt="resume image"
+          width="80px"
+          height="80px"
+        />
+        <h1>Resume Builder</h1>
+      </div>
+      <h6 class="bioData">
+        by Sharjeel Ahmed
+        <br />
+        Roll # 000040009
+      </h6>
+    </header>
+    <main>
+      <div class="resume_input_fields">
+        <form action="">
+            <div>
+              <div class="persnal_info_fields">
+                <h3>Personal Information</h1>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="fields" />
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="fields" />
+                <label for="phone">Phone Numbers:</label>
+                <input type="number" name="phone" id="phone" class="fields" />
+              </div>
+              <div>
+                
+              </div>
+            </div>
+          <div class="persnal_info_fields">
+            <h3>Education</h1>
+            <label style="font-size: 15px;" for="education">Choose your Qualification:</label>
+            <select id="education" name="education">
+              <option value="frontend">Middle</option>
+              <option value="backend">Intermediate</option>
+              <option value="backend">DAE</option>
+              <option value="fullstack">Graduation</option>
+              <option value="designer">Masters</option>
+            </select>
+            </option>
+          </div>
+          <div class="persnal_info_fields">
+            <h3>Work Experience</h1>
+            <label style="font-size: 15px;" for="experience">Enter your Work Experience:</label>
+            <textarea name="experience" id="experience" rows="3"></textarea>
+    
+          </div>
+          <div class="persnal_info_fields">
+            <h3>Skills</h1>
+            <label style="font-size: 15px;" for="skills">Enter your skills ',' seprated:</label>
+            <textarea name="skills" id="skills" rows="3"></textarea>
+          </div>
+          <button class="submit_btn">Generate Resume</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
