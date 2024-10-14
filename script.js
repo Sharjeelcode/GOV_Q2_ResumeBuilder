@@ -1,0 +1,12 @@
+var input_name = document.getElementById("name");
+var input_email = document.getElementById("email");
+var input_phone = document.getElementById("phone");
+var input_education = document.getElementById("education");
+var input_institute = document.getElementById("institute");
+var input_Orgnization = document.getElementById("Orgnization");
+var input_experience = document.getElementById("experience");
+var input_skills = document.getElementById("skills");
+var input_english = document.getElementById("english");
+var input_urdu = document.getElementById("urdu");
+var input_sindhi = document.getElementById("sindhi");
+console.log(input_education.value);
