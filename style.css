@@ -1,6 +1,8 @@
+/* Global Styles */
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -8,33 +10,39 @@ body {
   background: linear-gradient(to right, #f0f4c3, #b2dfdb, #b3e5fc, #f8bbd0);
   color: #333;
 }
+
 .header {
   display: flex;
   justify-content: center;
   background-color: #191919;
   color: white;
-  padding: 10px 0px;
+  padding: 10px 0;
   position: relative;
   border-bottom: 2px solid red;
   border-image: linear-gradient(to right, red, yellow, green, blue) 1;
 }
+
 .logo_div {
   display: flex;
   align-items: center;
 }
+
 .bioData {
   position: absolute;
   bottom: 2px;
   right: 30px;
 }
+
 .resume_input_fields {
   display: flex;
   justify-content: center;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
+
 main {
   margin: 10px;
 }
+
 form {
   padding: 20px;
   border: 2px solid white;
@@ -46,7 +54,9 @@ form {
   background-color: white;
   color: black;
   width: 60vw;
+  margin: 40px auto;
 }
+
 .persnal_info_fields {
   display: flex;
   flex-direction: column;
@@ -55,11 +65,11 @@ form {
   padding: 20px;
   position: relative;
 }
+
 .persnal_info_fields h3 {
-  position: absolute;
-  top: -12px;
-  background-color: white;
+  text-align: center;
 }
+
 .fields {
   outline: none;
   border: none;
@@ -68,10 +78,21 @@ form {
   font-size: 20px;
   font-weight: bold;
 }
+
+.education {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 label {
   font-weight: bolder;
-  margin: 10px 0px;
+  margin: 5px 0;
 }
+
 .submit_btn {
   padding: 10px;
   border-radius: 10px;
@@ -86,6 +107,7 @@ label {
   display: flex;
   justify-content: center;
 }
+
 .resume {
   padding: 20px;
   border: 2px solid white;
@@ -97,27 +119,128 @@ label {
   background-color: white;
   color: black;
   width: 60vw;
+  margin: 40px auto;
 }
+
 .resume h1 {
   text-transform: uppercase;
   font-size: 30px;
 }
+
 .num_email {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  flex-direction: column;
 }
+
 hr {
-  border-bottom: 4px solid;
+  border-bottom: 1px solid;
   border-image: linear-gradient(to right, red, yellow, green, blue) 1;
   width: 100%;
   height: 1px;
 }
+
 h3 p {
   text-align: left;
-  margin: 40px 0px;
+  margin: 40px 0;
 }
+
 #resume_name {
   text-align: center;
+}
+
+/*  Responsiveness for all devices*/
+
+@media (max-width: 600px) {
+  form,
+  .resume {
+    width: 90vw;
+    margin: 20px 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  label,
+  input {
+    font-size: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bioData {
+    position: relative;
+    right: auto;
+    bottom: auto;
+  }
+
+  .resume_input_fields {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submit_btn {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  form,
+  .resume {
+    width: 80vw;
+    margin: 30px auto;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  label,
+  input {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 769px) {
+  form,
+  .resume {
+    width: 60vw;
+    margin: 40px auto;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .bioData {
+    right: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .persnal_info_fields {
+    padding: 15px; /* Adjust padding for smaller devices */
+  }
+
+  .persnal_info_fields h3 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+
+  /* Adjust input fields */
+  .fields,
+  .education {
+    font-size: 16px; /* Adjust input field font size */
+    padding: 10px; /* Optional: Add some padding for better touch */
+  }
+
+  form {
+    width: 90vw; /* Make the form take up more width on smaller screens */
+    padding: 15px; /* Reduce padding */
+  }
 }

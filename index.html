@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="logo_div">
         <img
@@ -28,12 +29,13 @@
         Roll # 000040009
       </h6>
     </header>
+    <!-- Resume input fields -->
     <main>
       <div class="resume_input_fields">
         <form action="">
             <div>
               <div class="persnal_info_fields">
-                <h3>Personal Information</h1>
+                <h3>Personal Information</h3>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" class="fields" />
                 <label for="email">Email:</label>
@@ -48,7 +50,7 @@
           <div class="persnal_info_fields">
             <h3>Education</h1>
             <label style="font-size: 15px;" for="education">Choose your Qualification:</label>
-            <select id="education" name="education">
+            <select id="education" class="education" name="education">
               <option value="frontend">Middle</option>
               <option value="backend">Intermediate</option>
               <option value="backend">DAE</option>
@@ -61,35 +63,57 @@
           </div>
           <div class="persnal_info_fields">
             <h3>Work Experience</h1>
+              <label style="font-size: 15px;" for="Orgnization">Orgnization Name:</label>
+              <input type="text" name="Orgnization" class="fields"  id="Orgnization">
             <label style="font-size: 15px;" for="experience">Enter your Work Experience:</label>
             <textarea name="experience" id="experience" rows="3"></textarea>
-    
           </div>
           <div class="persnal_info_fields">
             <h3>Skills</h1>
             <label style="font-size: 15px;" for="skills">Enter your skills ',' seprated:</label>
             <textarea name="skills" id="skills" rows="3"></textarea>
           </div>
+          <div class="persnal_info_fields">
+            <h3>Languages</h1>
+            <label style="font-size: 15px;" for="skills">Select Languages</label>
+            <div>
+              <input type="checkbox" id="english"  name="english">
+              <label for="english">English</label>
+              <input type="checkbox" id="urdu"  name="urdu">
+              <label for="urdu">Urdu</label>
+              <input type="checkbox" id="sindhi"  name="sindhi">
+              <label for="sindhi">Sindhi</label>
+            </div>
+          </div>
           <button class="submit_btn">Generate Resume</button>
         </form>
       </div>
+
+      <!-- Resume output -->
       <div class="resume_output">
         <div class="resume">
           <h1 id="resume_name">sharjeel</h1>
           <div class="num_email">
-            <p>sharjeelahmed@gmail.com<span>|</span>03111121232</p>
+            <p>03111121232</p>
+            <p>sharjeelahmed@gmail.com</p>
           </div>
           <hr>
           <h3>Education:</h3>
-          <p id="education">kjdgfsjh</p>
+          <h5 id="education">fsc</h5>
+          <p id="institude">kjdgfsjh</p>
           <hr>
           <h3>Work Experience:</h3>
+          <h5 id="Orgnization">fsc</h5>
           <p id="work_experience">kjfdfhs</p>
           <hr>
           <h3>Skills:</h3>
           <p id="work_experience">kjfdfhs</p>
+          <hr>
+          <h3>Languages:</h3>
+          <p id="work_experience">kjfdfhs</p>
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
