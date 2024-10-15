@@ -25,6 +25,7 @@ body {
 .logo_div {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .bioData {
@@ -93,7 +94,7 @@ label {
   margin: 5px 0;
 }
 
-.submit_btn {
+#submit_btn {
   padding: 10px;
   border-radius: 10px;
   background-color: #4186f5;
@@ -102,9 +103,27 @@ label {
   color: white;
   border: none;
 }
-
-.resume_output {
+#pdf_div {
   display: flex;
+  justify-content: center;
+  display: none;
+  gap: 4px;
+}
+#pdf_div a {
+  text-decoration: none;
+}
+#download_resume {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4186f5;
+  font-weight: bolder;
+  font-size: 15px;
+  color: white;
+  border: none;
+  align-items: center;
+}
+#resume_output {
+  display: none;
   justify-content: center;
 }
 
@@ -126,7 +145,14 @@ label {
   text-transform: uppercase;
   font-size: 30px;
 }
-
+#output_name {
+  text-align: center;
+}
+#dataValidate {
+  text-align: center;
+  color: red;
+  display: none;
+}
 .num_email {
   display: flex;
   align-items: center;
@@ -150,7 +176,9 @@ h3 p {
 #resume_name {
   text-align: center;
 }
-
+#output_languages {
+  margin-left: 15px;
+}
 /*  Responsiveness for all devices*/
 
 @media (max-width: 600px) {
